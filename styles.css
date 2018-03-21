@@ -1,0 +1,147 @@
+body {
+    background: url("https://i.imgur.com/kbosv8h.jpg");
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 60px;
+    font-family: 'IBM Plex Sans Condensed', sans-serif !important;
+    color: white;
+}
+
+html {
+    height: 100%;
+}
+
+#header-img {
+    display: inline;
+    float: left;
+    position: relative;
+    top: -30px;
+    height: 80px;
+    width: 80px;
+}
+
+.navbar-brand {
+    color: 	#fff;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+}
+
+#nav-bar {
+    background-color: #a6888f;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.collapse ul li a {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #e6f0f4;
+}
+
+.navbar .navbar-nav > li > a:hover {
+    color: #333;
+    background-color: #f0f4e6;
+}
+
+.content {
+    text-align: center;
+    padding-top: 30px;
+}
+
+#welcome > h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 72px;
+}
+
+#welcome > h2 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 10px);
+}
+
+#spacer-1, #spacer-2 {
+    display: flex;
+    justify-content: center;
+}
+
+#spacer-1 img, #spacer-2 img {
+    flex: 1 1 1.5em;
+    height: 250px;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 7px #e4c3db solid;
+}
+
+#services {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: calc(40vh - 2px);
+}
+
+#standard, #superstar {
+    background-color: #92ab82;
+    flex: 1 1 1em;
+    max-width: 400px;
+    height: 500px;
+    margin: 20px 10px;
+    border: 2px #333 solid;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px 3px;
+}
+
+#standard > ul, #superstar > ul {
+    list-style-type: none;
+}
+
+#superstar img {
+    height: 120px;
+    width: 120px;
+}
+
+#subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 35%;
+    min-height: calc(100vh - 10px);
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 1366px) {
+    body {
+        background-size: cover;
+    }
+    #subscribe {
+        width: 70%;
+    }
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5em;
+}
+
+hr {
+    width: 500px; 
+    border-top: 1px solid #656c71;
+    border-bottom: 1px solid rgba(0,0,0,.6);
+}
