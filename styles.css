@@ -44,7 +44,7 @@ html {
 
 .navbar .navbar-nav > li > a:hover {
     color: #333;
-    background-color: #f0f4e6;
+    background-color: #c9d5da;
 }
 
 .content {
@@ -91,11 +91,12 @@ html {
 }
 
 #spacer-1 img, #spacer-2 img {
-    flex: 1 1 1.5em;
-    height: 350px;
+    flex: 2 1 1.5em;
+    max-height: 300px;
     max-width: 400px;
     border-radius: 50%;
     border: 7px #e8e8e8 solid;
+    margin: 10px;
 }
 
 #services {
@@ -107,7 +108,7 @@ html {
 }
 
 #standard, #superstar {
-    background-color: #92ab82;
+    background-color: #c9d5da;
     flex: 1 1 1em;
     max-width: 400px;
     height: 500px;
@@ -118,8 +119,11 @@ html {
 }
 
 #standard > ul, #superstar > ul {
-    justify-content: center;
-    list-style-type: none;
+    flex-direction: column;
+    text-align: left;
+    font-size: 1.3em;
+    padding: 30px 50px 30px 150px;
+    list-style-type: hiragana-iroha;
 }
 
 #standard img, #superstar img {
