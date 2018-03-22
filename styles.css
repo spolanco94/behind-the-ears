@@ -7,7 +7,7 @@ body {
     background-size: cover;
     padding-top: 60px;
     font-family: 'IBM Plex Sans Condensed', sans-serif !important;
-    color: white;
+    color: #fcfcfc;
 }
 
 html {
@@ -55,13 +55,22 @@ html {
 #welcome > h1 {
     font-family: 'Dancing Script', cursive;
     font-weight: 700;
-    font-size: 72px;
+    font-size: 7rem;
+    color: #fcfcfc;
+}
+
+#welcome {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.4);
 }
 
 #welcome > h2 {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-size: 3em;
     font-weight: 400;
     font-style: italic;
+    color: #fcfcfc;
 }
 
 #about {
@@ -70,6 +79,10 @@ html {
     align-items: center;
     justify-content: center;
     min-height: calc(100vh - 10px);
+    color: #fcfcfc;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.4);
 }
 
 #spacer-1, #spacer-2 {
@@ -79,17 +92,18 @@ html {
 
 #spacer-1 img, #spacer-2 img {
     flex: 1 1 1.5em;
-    height: 250px;
-    max-width: 300px;
+    height: 350px;
+    max-width: 400px;
     border-radius: 50%;
-    border: 7px #e4c3db solid;
+    border: 7px #e8e8e8 solid;
 }
 
 #services {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    min-height: calc(40vh - 2px);
+    min-height: 100vh;
+    padding-top: 100px;
 }
 
 #standard, #superstar {
@@ -104,12 +118,17 @@ html {
 }
 
 #standard > ul, #superstar > ul {
+    justify-content: center;
     list-style-type: none;
 }
 
-#superstar img {
+#standard img, #superstar img {
     height: 120px;
     width: 120px;
+}
+
+#standard img {
+    padding-top: 10px;
 }
 
 #subscribe {
@@ -119,26 +138,26 @@ html {
     justify-content: center;
     margin: auto;
     max-width: 35%;
-    min-height: calc(100vh - 10px);
+    min-height: 100vh;
     font-size: 2em;
-    color: #ffffff;
+    color: #fafafa;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                  0px 8px 13px rgba(0,0,0,0.1),
                  0px 18px 23px rgba(0,0,0,0.4);
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (max-width: 375px) {
     body {
+        display: flex;
+        flex-direction: column;
         background-size: cover;
     }
     #subscribe {
-        width: 70%;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
     }
-}
-
-h1 {
-    font-weight: 700;
-    font-size: 5em;
 }
 
 hr {
